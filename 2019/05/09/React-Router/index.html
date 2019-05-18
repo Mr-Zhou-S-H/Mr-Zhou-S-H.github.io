@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Mr.Zhou</title>
+  <title>React-Router | Mr.Zhou</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Mr.Zhou">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="这是一篇关于react-router的使用笔记以及参考教程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React-Router">
+<meta property="og:url" content="http://yoursite.com/2019/05/09/React-Router/index.html">
 <meta property="og:site_name" content="Mr.Zhou">
+<meta property="og:description" content="这是一篇关于react-router的使用笔记以及参考教程">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-18T09:05:08.831Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mr.Zhou">
+<meta name="twitter:title" content="React-Router">
+<meta name="twitter:description" content="这是一篇关于react-router的使用笔记以及参考教程">
   
   
     <link rel="icon" href="/assets/flowers.png">
@@ -167,130 +171,313 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-React-Router" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/18/React笔记/" class="archive-article-date">
-  	<time datetime="2019-05-18T06:18:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-18</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/18/React笔记/">React笔记</a>
+    <h1 class="article-title" itemprop="name">
+      React-Router
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/18/hello-world/" class="archive-article-date">
-  	<time datetime="2019-05-18T00:44:30.543Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/18/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/09/React-Router/" class="archive-article-date">
+        
+        <a href="/2019/05/09/React-Router/" class="archive-article-date">
   	<time datetime="2019-05-09T08:58:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-09</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/09/React-Router/">React-Router</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这是一篇关于react-router的使用笔记以及参考教程</p>
+<a id="more"></a> 
+<h1 id="react-router的使用"><a href="#react-router的使用" class="headerlink" title="react-router的使用"></a>react-router的使用</h1><h2 id="1-关于url中-的作用"><a href="#1-关于url中-的作用" class="headerlink" title="1. 关于url中#的作用:"></a>1. 关于url中#的作用:</h2><ul>
+<li>学习: <a href="http://www.ruanyifeng.com/blog/2011/03/url_hash.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2011/03/url_hash.html</a></li>
+<li>‘#’代表网页中的一个位置。其右面的字符，就是该位置的标识符</li>
+<li>改变#不触发网页重载</li>
+<li>改变#会改变浏览器的访问历史</li>
+<li>window.location.hash读取#值</li>
+<li>window.onhashchange = func 监听hash改变</li>
+</ul>
+<h2 id="2-react-router"><a href="#2-react-router" class="headerlink" title="2. react-router"></a>2. react-router</h2><ul>
+<li>github主页: <a href="https://github.com/ReactTraining/react-router" target="_blank" rel="noopener">https://github.com/ReactTraining/react-router</a></li>
+<li>官网教程: <a href="https://github.com/reactjs/react-router-tutorial/(官方教程)" target="_blank" rel="noopener">https://github.com/reactjs/react-router-tutorial/(官方教程)</a></li>
+<li>阮大大的教程参考: <a href="http://www.ruanyifeng.com/blog/2016/05/react_router.html?utm_source=tool.lu" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2016/05/react_router.html?utm_source=tool.lu</a></li>
+</ul>
+<h2 id="3-react-router库中的相关组件"><a href="#3-react-router库中的相关组件" class="headerlink" title="3. react-router库中的相关组件"></a>3. react-router库中的相关组件</h2><ul>
+<li>包含的相关组件: <ul>
+<li>Router: 路由器组件, 用来包含各个路由组件</li>
+<li>Route: 路由组件, 注册路由 </li>
+<li>IndexRoute: 默认路由组件</li>
+<li>hashHistory: 路由的切换由URL的hash变化决定，即URL的#部分发生变化</li>
+<li>Link: 路由链接组件</li>
+</ul>
+</li>
+<li>Router: 路由器组件<ul>
+<li>属性:  history={hashHistory} 用来监听浏览器地址栏的变化, 并将URL解析成一个地址对象，供React Router匹配</li>
+<li>子组件: Route</li>
+</ul>
+</li>
+<li>Route: 路由组件<ul>
+<li>属性1: path=”/xxx”  </li>
+<li>属性2: component={Xxx}</li>
+<li>根路由组件: path=”/“的组件, 一般为App</li>
+<li>子路由组件: 子<route>配置的组件</route></li>
+</ul>
+</li>
+<li>IndexRoute: 默认路由<ul>
+<li>当父路由被请求时, 默认就会请求此路由组件</li>
+</ul>
+</li>
+<li>hashHistory<ul>
+<li>用于Router组件的history属性</li>
+<li>作用: 为地址url生成?_k=hash, 用于内部保存对应的state</li>
+</ul>
+</li>
+<li>Link: 路由链接<ul>
+<li>属性1: to=”/xxx”</li>
+<li>属性2: activeClassName=”active”</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-配置-从官方教程样例中拷贝"><a href="#4-配置-从官方教程样例中拷贝" class="headerlink" title="4. 配置(从官方教程样例中拷贝)"></a>4. 配置(从官方教程样例中拷贝)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">* webpack配置: webpack.config.js</span><br></pre></td></tr></table></figure>
+<pre><code>module.exports = {
+  //入口js
+  entry: &apos;./index.js&apos;,
+  //编译打包输出
+  output: {
+    filename: &apos;bundle.js&apos;,
+    publicPath: &apos;&apos;
+  },
 
-        <div class="article-info info-on-right">
-          
-          
+  module: {
+    //使用的loaders
+    loaders: [
+      {test: /\.js$/, exclude: /node_modules/, loader: &apos;babel-loader?presets[]=es2015&amp;presets[]=react&apos;}
+    ]
+  }
+}
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 包配置: package.json</span><br></pre></td></tr></table></figure>
 
+{
+  &quot;name&quot;: &quot;tutorial&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;webpack-dev-server --inline --content-base .&quot;
+  },
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;dependencies&quot;: {
+    &quot;react&quot;: &quot;^0.14.7&quot;,
+    &quot;react-dom&quot;: &quot;^0.14.7&quot;,
+    &quot;react-router&quot;: &quot;^2.0.0&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;babel-core&quot;: &quot;^6.5.1&quot;,
+    &quot;babel-loader&quot;: &quot;^6.2.2&quot;,
+    &quot;babel-preset-es2015&quot;: &quot;^6.5.0&quot;,
+    &quot;babel-preset-react&quot;: &quot;^6.5.0&quot;,
+    &quot;http-server&quot;: &quot;^0.8.5&quot;,
+    &quot;webpack&quot;: &quot;^1.12.13&quot;,
+    &quot;webpack-dev-server&quot;: &quot;^1.14.1&quot;
+  }
+}
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">## 5. 编码</span><br></pre></td></tr></table></figure>
+</code></pre><ul>
+<li><p>定义各个路由组件</p>
+<ul>
+<li><p>About.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import React from &apos;react&apos;</span><br><span class="line">function About() &#123;</span><br><span class="line">  return &lt;div&gt;About组件内容&lt;/div&gt;</span><br><span class="line">&#125;</span><br><span class="line">export default About</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Home.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import React from &apos;react&apos;</span><br><span class="line">function Home() &#123;</span><br><span class="line">  return &lt;div&gt;Home组件内容2&lt;/div&gt;</span><br><span class="line">&#125;</span><br><span class="line">export default Home</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Repos.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123;Component&#125; from &apos;react&apos;</span><br><span class="line">export default class Repos extends Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;Repos组件&lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>定义应用组件: App.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123;Component&#125; from &apos;react&apos;</span><br><span class="line">import &#123;Link&#125; from &apos;react-router&apos;</span><br><span class="line"></span><br><span class="line">export default class App extends Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;h2&gt;Hello, React Router!&lt;/h2&gt;</span><br><span class="line">        &lt;ul&gt;</span><br><span class="line">          &lt;li&gt;&lt;Link to=&quot;/about&quot; activeClassName=&quot;active&quot;&gt;About2&lt;/Link&gt;&lt;/li&gt;</span><br><span class="line">          &lt;li&gt;&lt;Link to=&quot;/repos&quot; activeClassName=&quot;active&quot;&gt;Repos2&lt;/Link&gt;&lt;/li&gt;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">        &#123;this.props.children&#125;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>定义入口JS: index.js–&gt;渲染组件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import React from &apos;react&apos;</span><br><span class="line">import &#123;render&#125; from &apos;react-dom&apos;</span><br><span class="line">import &#123;Router, Route, IndexRoute, hashHistory&#125; from &apos;react-router&apos;</span><br><span class="line">import App from &apos;./modules/App&apos;</span><br><span class="line">import About from &apos;./modules/About&apos;</span><br><span class="line">import Repos from &apos;./modules/Repos&apos;</span><br><span class="line">import Home from &apos;./modules/Home&apos;</span><br><span class="line"></span><br><span class="line">render((</span><br><span class="line">  &lt;Router history=&#123;hashHistory&#125;&gt;</span><br><span class="line">    &lt;Route path=&quot;/&quot; component=&#123;App&#125;&gt;</span><br><span class="line">      &lt;IndexRoute component=&#123;Home&#125;/&gt;</span><br><span class="line">      &lt;Route path=&quot;/about&quot; component=&#123;About&#125;&gt;&lt;/Route&gt;</span><br><span class="line">      &lt;Route path=&quot;/repos&quot; component=&#123;Repos&#125;&gt;&lt;/Route&gt;</span><br><span class="line">    &lt;/Route&gt;</span><br><span class="line">  &lt;/Router&gt;</span><br><span class="line">), document.getElementById(&apos;app&apos;))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>主页面: index.html</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">  .active &#123;</span><br><span class="line">    color: red;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;div id=app&gt;&lt;/div&gt;</span><br><span class="line">&lt;script src=&quot;bundle.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 6. 传递请求参数</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>repo.js: repos组件下的分路由组件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">import React from &apos;react&apos;</span><br><span class="line">export default function (&#123;params&#125;) &#123;</span><br><span class="line">  let &#123;username, repoName&#125; = params</span><br><span class="line">  return (</span><br><span class="line">    &lt;div&gt;用户名:&#123;username&#125;, 仓库名:&#123;repoName&#125;&lt;/div&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>repos.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">import React from &apos;react&apos;</span><br><span class="line">import NavLink from &apos;./NavLink&apos;</span><br><span class="line"></span><br><span class="line">export default class Repos extends React.Component &#123;</span><br><span class="line"></span><br><span class="line">  constructor(props) &#123;</span><br><span class="line">    super(props);</span><br><span class="line">    this.state = &#123;</span><br><span class="line">      repos: [</span><br><span class="line">        &#123;username: &apos;faceback&apos;, repoName: &apos;react&apos;&#125;,</span><br><span class="line">        &#123;username: &apos;faceback&apos;, repoName: &apos;react-router&apos;&#125;,</span><br><span class="line">        &#123;username: &apos;Angular&apos;, repoName: &apos;angular&apos;&#125;,</span><br><span class="line">        &#123;username: &apos;Angular&apos;, repoName: &apos;angular-cli&apos;&#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;;</span><br><span class="line">    this.handleSubmit = this.handleSubmit.bind(this)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  handleSubmit () &#123;</span><br><span class="line"></span><br><span class="line">    const repos = this.state.repos</span><br><span class="line">    repos.push(&#123;</span><br><span class="line">      username: this.refs.username.value,</span><br><span class="line">      repoName: this.refs.repoName.value</span><br><span class="line">    &#125;)</span><br><span class="line">    this.setState(&#123;repos&#125;)</span><br><span class="line">    this.refs.username.value = &apos;&apos;</span><br><span class="line">    this.refs.repoName.value = &apos;&apos;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;h2&gt;Repos&lt;/h2&gt;</span><br><span class="line">        &lt;ul&gt;</span><br><span class="line">          &#123;</span><br><span class="line">            this.state.repos.map((repo, index) =&gt; &#123;</span><br><span class="line">              const to = `/repos/$&#123;repo.username&#125;/$&#123;repo.repoName&#125;`</span><br><span class="line">              return (</span><br><span class="line">                &lt;li key=&#123;index&#125;&gt;</span><br><span class="line">                  &lt;Link to=&#123;to&#125; activeClassName=&apos;active&apos;&gt;&#123;repo.repoName&#125;&lt;/Link&gt;</span><br><span class="line">                &lt;/li&gt;</span><br><span class="line">              )</span><br><span class="line">            &#125;)</span><br><span class="line">          &#125;</span><br><span class="line">          &lt;li&gt;</span><br><span class="line">            &lt;form onSubmit=&#123;this.handleSubmit&#125;&gt;</span><br><span class="line">              &lt;input type=&quot;text&quot; placeholder=&quot;用户名&quot; ref=&apos;username&apos;/&gt; / &#123;&apos; &apos;&#125;</span><br><span class="line">              &lt;input type=&quot;text&quot; placeholder=&quot;仓库名&quot; ref=&apos;repoName&apos;/&gt;&#123;&apos; &apos;&#125;</span><br><span class="line">              &lt;button type=&quot;submit&quot;&gt;添加&lt;/button&gt;</span><br><span class="line">            &lt;/form&gt;</span><br><span class="line">          &lt;/li&gt;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">        &#123;this.props.children&#125;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>index.js: 配置路由</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;Route path=&quot;/repos&quot; component=&#123;Repos&#125;&gt;</span><br><span class="line">  &lt;Route path=&quot;/repos/:username/:repoName&quot; component=&#123;Repo&#125;/&gt;</span><br><span class="line">&lt;/Route&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="6">
+<li><p>优化Link组件</p>
+<ul>
+<li><p>NavLink.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import React from &apos;react&apos;</span><br><span class="line">import &#123;Link&#125; from &apos;react-router&apos;</span><br><span class="line">export default function NavLink(props) &#123;</span><br><span class="line">  return &lt;Link &#123;...props&#125; activeClassName=&quot;active&quot;/&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Repos.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;NavLink to=&#123;to&#125;&gt;&#123;repo.repoName&#125;&lt;/NavLink&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>予人玫瑰,手留余香<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/appreciates.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/09/React-Router/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/14/小白入坑体验/" class="archive-article-date">
-  	<time datetime="2019-02-14T09:31:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-14</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2019/05/18/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/02/14/小白入坑体验/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">小白入坑体验</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/14/小白入坑体验/">小白入坑体验</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -313,8 +500,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
